@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "my-first-lib": {
+      "description": "My first schematic by lperezp",
+      "factory": "./my-first-lib/index#myFirstLib"
+    }
+  }
+}
