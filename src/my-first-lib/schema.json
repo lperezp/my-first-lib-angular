@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "indepth-dev-schematics",
+    "title": "A schematic to learn schematics",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "File name, also equivalent to its path",
+            "type": "string",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "content": {
+            "description": "Some content for that file",
+            "type": "string",
+            "$default": {
+                "$source": "argv",
+                "index": 1
+            }
+        },
+        "extension": {
+            "description": "An extension for that file. Defaults to markdown",
+            "type": "string",
+            "default": ".md"
+        }
+    },
+    "required": [
+        "name", "content"
+    ]
+}

@@ -3,7 +3,8 @@
   "schematics": {
     "my-first-lib": {
       "description": "My first schematic by lperezp",
-      "factory": "./my-first-lib/index#myFirstLib"
+      "factory": "./my-first-lib/index#myFirstLib",
+      "schema": "./my-first-lib/schema.json"
     }
   }
 }
